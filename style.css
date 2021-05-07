@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Architects Daughter", sans-serif;
+}
+
+
+.clock{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    /*background: url('./bg5.jpg');*/
+}
+
+.clock .time{
+    display: flex;
+}
+
+
+.clock .time div{
+    position: relative;
+    margin: 0.5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+.clock .time div span{
+    position: relative;
+    display: block;
+    width: 100px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.clock .time div span:nth-child(2){
+    height: 30px;
+    font-size: 0.7em;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    z-index: 9;
+    box-shadow: none;
+    background: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    border-radius: 5px;
+
+}
+
+.clock .time div:last-child span{
+    background:rgba(0, 0, 0, 0.5);
+}
+
+
+.clock .time div:last-child span:nth-child(2){
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.clock .time div:nth-child(2) span:nth-child(2){
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.clock .time div:nth-child(2) span:nth-child(1){
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.clock .time div:last-child span{
+    position: absolute;
+    bottom: 0;
+    font-size: 1.2em;
+    width: 60px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+.btn{
+    position: absolute;
+    bottom: 10%;
+    cursor: pointer;
+    padding: 10px 10px;
+    background-color: aqua;
+    border-radius: 5px;
+    border: none;
+    transform: translate(scale(0.98));
+}
+
+
+.clock h2{
+    font-family: 'Architects Daughter', sans-serif;
+    position: relative;
+    display: block;
+    color: #333;
+    text-align: center;
+    letter-spacing: 0.4em;
+    font-size: 2.5em;
+}
+
+
+#image-tag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+span{
+    transition: all 0.8s ease;
+}
+
+span.fade{
+    color: rgb(128, 145, 125);
+}
